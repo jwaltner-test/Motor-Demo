@@ -51,6 +51,10 @@ public class RobotContainer {
 
     // bind commands to buttons
     r_shooterButton.whenHeld(m_shooterCommand); 
+
+    // provide the Joystick to the m_shooterCommand
+    m_shooterCommand.init(r_joystick);
+
   }
 
   /**
